@@ -5,6 +5,8 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
 }
 
 header {
@@ -13,66 +15,144 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 70px;
 }
 
 .container {
-    max-width: 1200px; /* Максимальная ширина контейнера */
-    margin: 0 auto; /* Горизонтальное центрирование */
-    padding: 0 20px; /* Отступы по бокам */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
-    justify-content: space-between; /* Размещаем логотип и меню по краям */
-    align-items: center; /* Выравниваем по вертикали */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo img {
-    max-height: 80px; /* Максимальная высота логотипа */
+    max-height: 80px;
 }
 
 .nav__list {
-    list-style: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем отступы списка */
+    list-style: none;
+    padding: 0;
     margin: 0;
-    display: flex; /* Располагаем элементы списка в строку */
+    display: flex;
 }
 
 .nav__item {
-    margin-left: 60px; /* Отступ слева между элементами списка */
+    margin-left: 60px;
 }
 
 .nav__item:first-child {
-    margin-left: 0; /* Убираем отступ у первого элемента списка */
+    margin-left: 0;
 }
 
 .nav__item a {
     font-family: "Roboto", serif;
     font-weight: normal;
-    text-decoration: none; /* Убираем подчеркивание ссылок */
-    color: #000000; /* Цвет текста ссылок */
-    font-size: 18px; /* Размер шрифта ссылок */
-    transition: color 0.3s ease; /* Плавный переход цвета при наведении */
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
 .nav__item a:hover {
-    color: #F5CE62; /* Цвет текста ссылок при наведении */
+    color: rgba(228, 196, 110, 0.76);
 }
 
-.hero__content {
+.blurred-section {
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.blurred-section__background {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin: 0 auto;
-    height: 640px;
-background-image: url('./img/hotel-oimo.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 100%;
+    z-index: -1;
+    border-radius: 25px;
 }
 
-.hero-text {
+.blurred-section__background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(4px);
+    transform: scale(1.1);
+
+}
+
+.blurred-section__content-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.blurred-section__content {
+    text-align: center;
     font-family: "Roboto", serif;
 }
 
-.hero-text h1 {
-    display: inline;
+.blurred-section__title {
+    color: rgb(255, 255, 255);
+    font-size: 56px;
+}
+
+.blurred-section__text {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.services-section {
+    margin: 70px auto 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.services-section__header h1 {
     font-family: "Roboto", serif;
     font-weight: normal;
-    font-size: 36px;
-    font-style: normal;
+    font-size: 32px;
+}
+
+.services-section__content ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    columns: auto 0;
+    flex-wrap: wrap;
+
+}
+
+.services-section__item {
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    min-width: 140px;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(239, 228, 208, 0.34);
+    border-radius: 15px;
+    margin: 20px;
+    color: black;
+}
+
+.services-section__item img {
+    width: 25px;
+    height: 25px;
+    margin: 10px auto;
 }

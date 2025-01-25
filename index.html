@@ -1,39 +1,81 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WS playground</title>
-  <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="public/img/images.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Oimo Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="public/styles/style.css"/>
 </head>
 <body>
-<header class="logo">
-  <a href="https://www.jetbrains.com/webstorm/">
-    <img src="/webstorm-logo.svg" alt="WebStorm logo" width="344"
-         height="90">
-  </a>
+<header class="header container">
+    <div class="header__logo">
+        <a href="">
+            <img src="public/img/images.png" alt="Oimo Hotel"/>
+        </a>
+    </div>
+    <nav class="header__nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="">Главная</a></li>
+            <li class="nav__item"><a href="">Услуги</a></li>
+            <li class="nav__item"><a href="">Номера</a></li>
+            <li class="nav__item"><a href="">Местоположение</a></li>
+            <li class="nav__item"><a href="">Контакты</a></li>
+        </ul>
+    </nav>
 </header>
-<main id="app">
-  <h1 class="title">
-    Thank you for trying it out. <br /> Your first project is up and running
-    now.
-  </h1>
-  <section class="counter">
-    <div class="counter-info">
-      <p class="counter-text">Counter is</p>
-      <p class="counter-value" id="counter-value"></p>
-    </div>
-    <div class="counter-interaction">
-      <button id="increaseByOne" type="button">+1</button>
-      <button id="increaseByTwo" type="button">+2</button>
-      <button id="decreaseByOne" type="button">-1</button>
-      <button id="decreaseByTwo" type="button">-2</button>
-    </div>
-  </section>
+<main>
+    <section class="blurred-section container">
+        <div class="blurred-section__background">
+            <img src="/public/img/hotel-oimo.jpg" alt="Фоновое изображение"/>
+        </div>
+        <div class="container blurred-section__content-wrapper">
+            <div class="blurred-section__content">
+                <h2 class="blurred-section__title">OIMO HOTEL</h2>
+                <p class="blurred-section__text"> - Лучший отель в Караколе</p>
+            </div>
+        </div>
+    </section>
+    <section class="container services-section">
+        <div class="services-section__header">
+            <h1>Услуги</h1>
+        </div>
+        <div class="services-section__content">
+            <ul class="services-section__list">
+                <li class="services-section__item">
+                    <img src="/public/img/family.svg" alt="">
+                    <p>Семейные номера</p>
+                </li>
+                <li class="services-section__item">
+                    <img src="/public/img/no-smoking.svg" alt="">
+                    <p>Номера для некурящих</p>
+                </li>
+                <li class="services-section__item">
+                    <img src="/public/img/parking.svg" alt="">
+                    <p>Бесплатная парковка</p>
+                </li>
+                <li class="services-section__item">
+                    <img src="/public/img/transfer.svg" alt="">
+                    <p>Трансфер до отеля</p>
+                </li>
+                <li class="services-section__item">
+                    <img src="/public/img/wifi.svg" alt="">
+                    <p>Бесплатный Wi-Fi</p>
+                </li>
+                <li class="services-section__item">
+                    <img src="/public/img/breakfast.svg" alt="">
+                    <p>Завтраки</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="container services-section"></section>
 </main>
-<footer class="technologies">
-  <img src="/technologies.svg" alt="List of supported technologies">
+<footer>
 </footer>
 <script type="module" src="/src/main.js"></script>
 </body>
