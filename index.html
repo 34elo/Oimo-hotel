@@ -12,23 +12,23 @@
     <link rel="stylesheet" href="public/styles/style.css"/>
 </head>
 <body>
-<header class="header container">
+<header class="header container" id="header">
     <div class="header__logo">
-        <a href="">
+        <a href="#header">
             <img src="public/img/images.png" alt="Oimo Hotel"/>
         </a>
     </div>
     <nav class="header__nav">
         <ul class="nav__list">
-            <li class="nav__item"><a href="">Главная</a></li>
-            <li class="nav__item"><a href="">Услуги</a></li>
-            <li class="nav__item"><a href="">Галерея</a></li>
-            <li class="nav__item"><a href="">Местоположение</a></li>
+            <li class="nav__item"><a href="#about">Главная</a></li>
+            <li class="nav__item"><a href="#services">Услуги</a></li>
+            <li class="nav__item"><a href="#gallery">Галерея</a></li>
+            <li class="nav__item"><a href="#place">Местоположение</a></li>
         </ul>
     </nav>
 </header>
 <main>
-    <section class="blurred-section container">
+    <section class="blurred-section container" id="about">
         <div class="blurred-section__background">
             <img src="/public/img/hotel-oimo.jpg" alt="Фоновое изображение"/>
         </div>
@@ -39,7 +39,7 @@
             </div>
         </div>
     </section>
-    <section class="container services-section">
+    <section class="container services-section" id="services">
         <div class="services-section__header">
             <h1>Услуги</h1>
         </div>
@@ -72,7 +72,7 @@
             </ul>
         </div>
     </section>
-    <section class="container gallery-section">
+    <section class="container gallery-section" id="gallery">
         <div class="gallery-section__header">
             <h1>Галерея</h1>
         </div>
@@ -94,9 +94,33 @@
             <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
         </div>
     </section>
+    <section class="place-section" id="place">
+        <div class="place-section__header">
+            <h1>Местоположение</h1>
+        </div>
+        <div class="place-section__content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5887906442667!2d78.39683024263029!3d42.485833879353315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38865b0047044e9b%3A0x358081cf5f4147a7!2z0J7QudC80L4gKE9JTU8p!5e0!3m2!1sru!2sru!4v1737819652362!5m2!1sru!2sru"
+                    width="900px" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
 </main>
 <footer>
+    <div class="contacts">
+        <div><p id="contacts">Наши контакты</p></div>
+        <div class="container">
+            <ul class="footer__list">
+                <li><a href="https://www.booking.com/hotel/kg/oimohotel.ru.html"><img src="public/img/bookingcom-1.svg"
+                                                                                      alt=""></a></li>
+                <li><a href="https://www.instagram.com/oimohotel/"><img src="public/img/Instagram.png" alt=""></a></li>
+                <li><a href="https://t.me/+996997998634"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/768px-Telegram_2019_Logo.svg.png"
+                        alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <p>© 2025. Oimo Hotel</p>
 </footer>
-<script type="module" src="src/main.js"></script>
+<script type="module" src="src/gallery.js"></script>
 </body>
 </html>
