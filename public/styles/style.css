@@ -1,0 +1,78 @@
+.color {
+    color: #FADB80;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Горизонтальное центрирование */
+    padding: 0 20px; /* Отступы по бокам */
+    display: flex;
+    justify-content: space-between; /* Размещаем логотип и меню по краям */
+    align-items: center; /* Выравниваем по вертикали */
+}
+
+.header__logo img {
+    max-height: 80px; /* Максимальная высота логотипа */
+}
+
+.nav__list {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы списка */
+    margin: 0;
+    display: flex; /* Располагаем элементы списка в строку */
+}
+
+.nav__item {
+    margin-left: 60px; /* Отступ слева между элементами списка */
+}
+
+.nav__item:first-child {
+    margin-left: 0; /* Убираем отступ у первого элемента списка */
+}
+
+.nav__item a {
+    font-family: "Roboto", serif;
+    font-weight: normal;
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #000000; /* Цвет текста ссылок */
+    font-size: 18px; /* Размер шрифта ссылок */
+    transition: color 0.3s ease; /* Плавный переход цвета при наведении */
+}
+
+.nav__item a:hover {
+    color: #F5CE62; /* Цвет текста ссылок при наведении */
+}
+
+.hero__content {
+    width: 100%;
+    margin: 0 auto;
+    height: 640px;
+background-image: url('./img/hotel-oimo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    font-family: "Roboto", serif;
+}
+
+.hero-text h1 {
+    display: inline;
+    font-family: "Roboto", serif;
+    font-weight: normal;
+    font-size: 36px;
+    font-style: normal;
+}
