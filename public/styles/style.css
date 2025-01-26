@@ -394,6 +394,10 @@ footer img {
         display: block;
         z-index: 3;
     }
+
+    .burger-script {
+        display: none;
+    }
 }
 
 
