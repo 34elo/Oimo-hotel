@@ -1,6 +1,6 @@
 release fixes
-- fix blur photo
-- fix .svg in services
+- fix blur photo - done(bad path)
+- fix .svg in services - done(remove path)
 
 media fixes
 - do media gallery(1 photo)
