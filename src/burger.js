@@ -1,8 +1,8 @@
-if (innerWidth < 900){
+if (window.innerWidth < 900){
   const burgerBtn = document.querySelector('.header__hamburger');
   const navMenu = document.querySelector('.header__nav');
   const items = Array.from(document.querySelectorAll('.nav__item a'));
-
+  console.log(true);
   let isToogle = false;
 
   items.forEach((item) => {
