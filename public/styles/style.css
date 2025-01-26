@@ -160,6 +160,11 @@ a {
     height: 25px;
     margin: 10px auto;
 }
+.services-section__item svg {
+    width: 25px;
+    height: 25px;
+    margin: 10px auto;
+}
 
 .gallery-section {
     width: 100%;
