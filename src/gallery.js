@@ -62,7 +62,6 @@ next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
 
 function updateSlider() {
-  console.log(currentSlideIndexes);
   slides.forEach((slide, i) => {
     if (currentSlideIndexes.includes(i)) {
       slide.style.display = 'block';
@@ -70,7 +69,7 @@ function updateSlider() {
       slide.style.display = 'none';
     }
   });
-  console.log('update slider');
+
 }
 
 function initializeSlider(){
