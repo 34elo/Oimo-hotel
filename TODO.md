@@ -5,4 +5,8 @@ release fixes
 adaptive fixes
 - do media gallery(1 photo) - done
 - do everything - done
-- do burger-menu
+- do burger-menu - done
+
+Фичи
+- в services, добавить анимацию при нажатии/наведении и тд.
+- кнопочки побольше для телефонов, сложно попасть
